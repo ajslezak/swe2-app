@@ -9,4 +9,4 @@
 - I used (_extends "admin/base_site.html"_) the Admin site css to make the Poll application look better
 - Coveralls is reporting coverage correctly, but it's reporting under the "team1-mon-spring26" repo.
   I had to use this token because the token for this repo would not populate the branch and pull fields,
-  meaning the Coverage badge was always "Unknown"
+  meaning the Coverage badge was always "Unknown" 
