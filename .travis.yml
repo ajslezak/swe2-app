@@ -17,8 +17,7 @@ script:
   #- pytest --cov=./ --cov-report=xml
   - coverage report  # This prints the table in your Travis log
   - coverage xml     # This creates the file for Codecov
-  - export COVERALLS_BRANCH=main #coveralls can't figure out the branch
-  - coveralls
+  - coveralls --branch $TRAVIS_BRANCH
 
 deploy:
   provider: elasticbeanstalk
