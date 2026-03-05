@@ -6,7 +6,7 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install black flake8 coveralls coverage pytest-django
+  - pip install black flake8 coveralls coverage pytest-django PyYAML
 
 script:
   # --check: doesn't reformat, just exits with error if code isn't "blackened"
@@ -17,7 +17,7 @@ script:
   #- pytest --cov=./ --cov-report=xml
   - coverage report  # This prints the table in your Travis log
   - coverage xml     # This creates the file for Codecov
-  - coveralls -v --service=github
+  - coveralls -v
 
 deploy:
   provider: elasticbeanstalk
