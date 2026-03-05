@@ -30,6 +30,9 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-2-793314585930"
   #bucket_path: "/"
   zip_file: "polls.zip"
+  on:
+    branch: main
 
-#after_success:
-#  - bash <(curl -s https://codecov.io/bash)
+
+after_success:
+  - coveralls
