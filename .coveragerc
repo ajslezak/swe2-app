@@ -1,6 +1,6 @@
 [run]
 # Only measure your actual app code
-source = maps
+source = polls
 omit =
     */migrations/*
     */__init__.py
