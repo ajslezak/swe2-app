@@ -16,3 +16,6 @@ def test_import():
         assert True
     except ImportError:
         assert False, "The application models could not be imported"
+
+def test_fail():
+    assert False
